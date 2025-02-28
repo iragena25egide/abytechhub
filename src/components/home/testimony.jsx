@@ -33,14 +33,14 @@ export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <div className="bg-[#0d0f15] py-16 px-4 text-white text-center relative">
+    <div className="bg-[#0d0f15] py-16 px-4 w-full text-white text-center relative">
       <h2 className="text-4xl font-bold mb-4">
         What My <span className="text-yellow-400">Clients</span> Say
       </h2>
       <p className="text-gray-400 mb-8">
         Ac quis pretium consectetur urna dolor. Cursus et amet neque ullamcorper. Cursus tempus accumsan eu nibh.
       </p>
-      <div className="flex justify-center overflow-hidden">
+      <div className="flex justify-center w-full overflow-hidden">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}

@@ -1,34 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+
+
   return (
     <section className="relative  text-white min-h-screen bg-black px-2 md:px-2 lg:px-2">
-        <header className="relative w-full bg-gray-900 text-white py-4 px-6 h-20 flex justify-between items-center">
-      {/* Logo Section */}
-      <div className="flex items-center">
-        <span className="text-xl font-bold text-yellow-400">Abytech Hub</span>
-      </div>
-
-      {/* Navigation Menu */}
-      <nav className="hidden md:flex space-x-6">
-        <a href="#" className="text-yellow-400">Home</a>
-        <a href="#" className="hover:text-yellow-400">Pages</a>
-        <a href="#" className="hover:text-yellow-400">Services</a>
-        <a href="#" className="hover:text-yellow-400">Projects</a>
-        <a href="#" className="hover:text-yellow-400">Blog</a>
-        <a href="#" className="hover:text-yellow-400">Contact Us</a>
-      </nav>
-
-      {/* Contact Us Button */}
-      <button className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-md text-white font-bold">
-        Contact Us
-      </button>
-
-      {/* Mobile Menu (Hamburger) */}
-      <div className="md:hidden">
-        <button className="text-white text-2xl">&#9776;</button>
-      </div>
-    </header>
+    
       
       
     <section className="flex flex-col md:flex-row items-center justify-center w-full px-6 md:px-12 py-12 bg-gray-900 text-white">
