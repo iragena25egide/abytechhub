@@ -42,9 +42,9 @@ const Home = () => {
       </div>
 
       {/* Text Content */}
-      <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
+      <div className="w-full md:w-1/2 mt-8 md:mt-24 text-center md:text-left">
         <button className="bg-gray-700 text-white px-6 py-2 rounded-full mb-4 shadow-md">
-          👋 Welcome to my Abytech Hub
+          👋 Welcome to  Abytech Hub
         </button>
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
           I’m <span className="text-yellow-400">Prince Henry</span>
@@ -53,10 +53,10 @@ const Home = () => {
          CEO AbyTech
         </h2>
         <p className="text-gray-300 mt-4 max-w-md mx-auto md:mx-0 leading-relaxed">
-          Since 2020, we have been working with businesses, agencies, and individuals to build digital content, based in New York, USA.
+            Since 2022,we are delivering softwares services and solutions towards new technology.
         </p>
         <button className="mt-6 bg-red-500 hover:bg-red-600 px-6 py-3 rounded-md text-white font-bold transition duration-300 shadow-md">
-          Hire Me!
+          Connect To Us
         </button>
       </div>
     </section>
