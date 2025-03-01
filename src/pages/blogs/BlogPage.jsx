@@ -12,11 +12,11 @@ const BlogPage = () => {
         <div className='w-full flex-col pb-7 justify-center bg-[#0d0f15]  items-center flex gap-2'>
             <Header title={`blog`} path={`blog`} />
 
-            <div className="flex flex-col justify-center w-9/12 pt-10 items-center gap-10">
+            <div className="flex flex-col justify-center w-full lg:w-10/12 xl:w-9/12 pt-10 items-center gap-10">
 
                 <h1 className='text-yellow-300 font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>News <span className='text-white'>&</span> Blogs</h1>
 
-                <div className="flex items-center gap-9 justify-center flex-wrap">
+                <div className="flex items-center gap-9 w-full justify-center p-4 flex-wrap">
 
                     {
                         cards.map((card, key) => (

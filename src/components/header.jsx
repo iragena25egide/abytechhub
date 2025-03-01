@@ -12,7 +12,7 @@ const Header = ({title,path}) => {
             }}>
 
             <div className="flex flex-col h-full text-white justify-center gap-3 items-center">
-            <h1 className='text-7xl font-semibold uppercase'>{title}</h1>
+            <h1 className=' text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold uppercase'>{title}</h1>
             <p className='capitalize'>Home / {path}</p>
             </div>
 
