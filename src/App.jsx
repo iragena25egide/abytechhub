@@ -6,6 +6,7 @@ const  BlogPage = lazy(()=> import("./pages/blogs/BlogPage"));
 const  BlogSingle = lazy(()=> import("./pages/blogs/Blogsingle"));
 const  ServicePage = lazy(()=> import( "./pages/services/ServicePage"));
 const  ServiceSingle = lazy(()=> import( "./pages/services/ServiceSingle"));
+const BlogContainer= lazy(()=>import("../src/pages/blogs/blogContainer"));
 const AboutUs=lazy(()=>import('./pages/about us/aboutUs'));
 import MainLayout from "./layouts/MainLayout";
 

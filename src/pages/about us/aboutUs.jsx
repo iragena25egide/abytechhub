@@ -1,43 +1,64 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from 'react';
+import { motion } from 'framer-motion';
+import SubscribeSection from '../../components/blog/subscribe';
+import ContentSection from '../../components/talkContent';
 
 const AboutUs = () => {
-  useEffect(() => {
-    AOS.init({ duration: 200, easing: "ease-in-out", once: false });
-  }, []);
+    return (
+        <>
+        <div className="bg-gray-900 text-white py-20">
+            <div className="container mx-auto px-4">
+                <motion.h2 
+                    className="text-4xl font-bold mb-6 text-center text-yellow-400"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    About Us
+                </motion.h2>
+                <div className="flex flex-col md:flex-row items-center gap-10">
+                    <motion.div 
+                        className="flex-1"
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <p className="text-lg leading-relaxed mb-6">
+                            At Abytech, we are dedicated to delivering top-notch software solutions that drive success. 
+                            With a passion for technology and innovation, we specialize in building modern, efficient, 
+                            and scalable web applications that meet your business needs.
+                        </p>
+                        <p className="text-lg leading-relaxed mb-6">
+                            Our team of experienced full-stack developers excels in both MERN and PERN stacks, 
+                            leveraging the power of PostgreSQL, Sequelize, and real-time technologies to create dynamic, 
+                            user-centric applications. Whether it's implementing robust search features, real-time updates, 
+                            or crafting visually appealing designs, we have you covered.
+                        </p>
+                        <p className="text-lg leading-relaxed">
+                            Trust Abytech to transform your vision into reality with tailored solutions and a commitment 
+                            to excellence. We are here to support you at every step of your digital journey.
+                        </p>
+                    </motion.div>
+                    <motion.div 
+                        className="flex-1"
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <img 
+                            src="../image/blog5.png" 
+                            alt="About Us" 
+                            className="rounded-2xl shadow-lg"
+                        />
+                    </motion.div>
+                </div>
+            </div>
 
-  return (
-    <section className="relative text-white min-h-screen bg-black px-2 md:px-2 lg:px-2">
-      <section className="flex flex-col md:flex-row items-center justify-center w-full px-6 md:px-12 py-12 bg-gray-900 text-white">
-        {/* Image Container */}
-        <div className="relative w-full md:w-1/2 flex justify-center">
-          <img
-            src="../image/landing.png"
-            alt="About Us"
-            className="w-64 md:w-96 lg:w-[400px] object-cover rounded-lg "
-          />
-        </div>
-
-        {/* Text Content */}
-        <div className="w-full md:w-1/2 mt-8 md:mt-24 text-center md:text-left">
-          <button className="bg-gray-700 text-white px-6 py-2 rounded-full mb-4 shadow-md">
             
-          </button>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            About <span className="text-yellow-400">Abytech Hub</span>
-          </h1>
-          <p className="text-gray-300 mt-4 max-w-md mx-auto md:mx-0 leading-relaxed">
-            Since 2022, Abytech Hub has been a leader in delivering top-notch software services and solutions, empowering businesses with cutting-edge technology.
-            we are on the the company to delivery software product that will ensure you are interacting with the new world technology.
-          </p>
-          <button className="mt-6 bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-md text-white font-bold transition duration-300 shadow-md">
-            Learn More
-          </button>
         </div>
-      </section>
-    </section>
-  );
+        <ContentSection />
+        </>
+    );
 };
 
 export default AboutUs;
