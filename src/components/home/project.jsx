@@ -6,9 +6,9 @@ import React from 'react';
 
 
 const projects = [
-  '/path-to-image1.jpg',
-  '/path-to-image2.jpg',
-  '/path-to-image3.jpg',
+  '../image/app.png',
+  '../image/ap.png',
+  '../image/mobille.png',
   '/path-to-image4.jpg',
   '/path-to-image5.jpg',
 ];
@@ -20,7 +20,7 @@ export default function LatestProjects() {
         <h2 className="text-3xl font-bold">
           My <span className="text-yellow-400">Latest</span>Projects
         </h2>
-        <p className="text-gray-400 mt-2">Hendrerit facilisi habitasse arcu urna bibendum.</p>
+        <p className="text-gray-400 mt-2">This Is The Latest Project We Have Build.</p>
       </div>
       <Swiper
         spaceBetween={20}
@@ -37,7 +37,7 @@ export default function LatestProjects() {
         {projects.map((image, index) => (
           <SwiperSlide key={index}>
             <div className="rounded-lg overflow-hidden">
-              <img src={image} alt={`Project ${index + 1}`} className="w-full h-[400px] object-cover" />
+              <img src={image} alt={`Project ${index + 1}`} className="w-full h-[200px] object-cover" />
             </div>
           </SwiperSlide>
         ))}

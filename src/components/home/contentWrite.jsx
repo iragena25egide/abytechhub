@@ -6,21 +6,20 @@ import React from "react";
 
 
 const services = [
-  { title: "Web Copywriter", icon: <FaPencilRuler size={50} className="text-orange-400" /> },
-  { title: "Brochure", icon: <IoDocumentTextSharp size={50} className="text-orange-400" /> },
-  { title: "Digital", icon: <MdOutlineDraw size={50} className="text-orange-400" /> },
-  { title: "Email Copywriting", icon: <AiOutlineMail size={50} className="text-orange-400" /> },
+  { title: "WEB DEVELOPMENT", icon: <FaPencilRuler size={50} className="text-orange-400" /> },
+  { title: "APP DEVELOPMENT", icon: <IoDocumentTextSharp size={50} className="text-orange-400" /> },
+  { title: "UI/UX DESIGN", icon: <MdOutlineDraw size={50} className="text-orange-400" /> },
+  { title: "E-COMMERCE SOLUTION", icon: <AiOutlineMail size={50} className="text-orange-400" /> },
 ];
 
 export default function ContentWriteServices() {
   return (
     <section className="bg-[#0D0F1A] text-white py-16 px-6 text-center">
       <h2 className="text-4xl font-bold">
-        Our <span className="text-yellow-400">Content Write</span> Services
+        Our <span className="text-yellow-400">Services</span> 
       </h2>
       <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
-        Pharetra elementum risus quam et adipiscing ac tempor. Donec gravida sagittis elit ullamcorper sed
-        phasellus tincidunt velit ultricies commodo.
+        
       </p>
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
         {services.map((service, index) => (

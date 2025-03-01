@@ -4,28 +4,28 @@ import { FaQuoteRight, FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    rating: 5,
-    title: "Love Content Strategy ",
+    rating: 4,
+    title: "Full Stack Developer ",
     emoji: "😍",
-    text: "Neque auctor arcu morbi a nunc magna ultricies tellus egestas. Cursus et sed dapibus tempor sollicitudin id eget mauris sed imperdiet morbi.",
-    name: "Jemmy Smith",
-    date: "20 Dec 2025",
+    text: "it was a great experience to work with AbyTech becouse they boost my career and they help me to build my technology today.",
+    name: "Mihigo Prince",
+    date: "20 Feb 2025",
   },
   {
     rating: 5,
-    title: "Awesome Freelancer ",
+    title: "Web Developer",
     emoji: "👍",
-    text: "Et scelerisque ornare arcu sit maecenas in scelerisque interdum id. Vitae mattis in ultricies quis nisi fermentum nullam. Mattis non sed feugiat proin amet.",
-    name: "Maria Anderson",
-    date: "18 Dec 2025",
+    text: "it was a great experience to work with AbyTech becouse they boost my career and they help me to build my technology today.",
+    name: "Ngenzi Serge",
+    date: "12 Jan 2025",
   },
   {
     rating: 5,
-    title: "Best Content Strategy ",
+    title: "Backend Developer",
     emoji: "😍",
-    text: "Neque auctor arcu morbi a nunc magna ultricies tellus egestas. Cursus et sed dapibus tempor sollicitudin id eget mauris sed imperdiet morbi.",
-    name: "Stock Hedge",
-    date: "20 Jan 2025",
+    text: "it was a great experience to work with AbyTech becouse they boost my career and they help me to build my technology today.",
+    name: "Iragena Egide",
+    date: "22 Feb 2025",
   },
 ];
 
@@ -37,8 +37,8 @@ export default function Testimonials() {
       <h2 className="text-4xl font-bold mb-4">
         What My <span className="text-yellow-400">Clients</span> Say
       </h2>
-      <p className="text-gray-400 mb-8">
-        Ac quis pretium consectetur urna dolor. Cursus et amet neque ullamcorper. Cursus tempus accumsan eu nibh.
+      <p className="text-gray-400 mb-4">
+       Different Custom with what they say about AbyTech.
       </p>
       <div className="flex justify-center w-full overflow-hidden">
         <div

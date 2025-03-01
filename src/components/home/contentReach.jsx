@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 const ContentReach = () => {
@@ -13,8 +13,21 @@ const ContentReach = () => {
   }, []);
 
   return (
-    <section className="relative bg-black text-white py-16 px-8">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+    <section
+      className="relative h-[400px] text-white py-16 px-8 bg-cover bg-center"
+    >
+      {/* Background with Overlay */}
+      <div
+        className="absolute inset-0 bg-black bg-opacity-10"
+        style={{
+          backgroundImage: "url('../image/bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-2/3">
           <h2 className="text-4xl font-bold">
             <span className="text-yellow-400">Content Reaches</span>
@@ -23,13 +36,14 @@ const ContentReach = () => {
         </div>
         <div className="md:w-1/3 flex flex-col gap-4 mt-6 md:mt-0">
           <button className="border border-white text-white py-2 px-6 rounded-lg hover:bg-white hover:text-black transition">
-            Upload Document
+            Working With Us
           </button>
           <button className="bg-red-400 text-white py-2 px-6 rounded-lg hover:bg-red-500 transition">
-            Pricing List
+            Trust Us To Get New
           </button>
         </div>
       </div>
+
       {/* Scroll to Top Button */}
       {showScroll && (
         <button

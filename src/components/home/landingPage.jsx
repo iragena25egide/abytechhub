@@ -13,7 +13,7 @@ const Home = () => {
       {/* Image Container */}
       <div className="relative w-full md:w-1/2 flex justify-center">
         <img
-          src="../image/landing.png"
+          src="../image/footer.png"
           alt="Emily Anderson"
           className="w-64 md:w-96 lg:w-[400px] object-cover rounded-lg "
         />
