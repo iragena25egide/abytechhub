@@ -9,7 +9,7 @@ const BlogPage = () => {
 
    
     return (
-        <div className='w-full flex-col pb-7 justify-center bg-[#0d0f15]  items-center flex gap-2'>
+        <div className='w-full flex-col pb-7 justify-center bg-[#0d0f15]  items-center flex gap-2 mt-25'>
             <Header title={`blog`} path={`blog`} />
 
             <div className="flex flex-col justify-center w-9/12 pt-10 items-center gap-10">

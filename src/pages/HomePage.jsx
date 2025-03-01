@@ -22,7 +22,7 @@ const HomePage = () => {
             <ContentWriteServices />
             <WorkProcess />
             <ContentSection />
-            <LatestProjects />
+            {/* <LatestProjects /> */}
             <Testimonials />
             <BlogLatest />
 

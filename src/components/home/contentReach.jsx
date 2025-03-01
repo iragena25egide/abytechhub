@@ -18,7 +18,7 @@ const ContentReach = () => {
     >
       {/* Background with Overlay */}
       <div
-        className="absolute inset-0 bg-black bg-opacity-10"
+        className="absolute inset-0 bg-black bg-opacity-100"
         style={{
           backgroundImage: "url('../image/bg.png')",
           backgroundSize: "cover",

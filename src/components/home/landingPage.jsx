@@ -1,14 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 
 const Home = () => {
 
+  const [scrolling, setScrolling] = useState(false);
+  
+    useEffect(() => {
+      AOS.init({ duration: 200, easing: "ease-in-out", once: false });
+  
+      const handleScroll = () => {
+        setScrolling(window.scrollY > 80); // Change background when scrolled past 50px
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const links = [
+      { path: "/", name: "Home" },
+      { path: "/services", name: "Services" },
+      { path: "/blogs", name: "Blog" },
+      { path: "/contact-us", name: "Contact Us" },
+    ];
 
   return (
+
     <section className="relative  text-white min-h-screen bg-black px-2 md:px-2 lg:px-2">
+     
     
-      
-      
     <section className="flex flex-col md:flex-row items-center justify-center w-full px-6 md:px-12 py-12 bg-gray-900 text-white">
       {/* Image Container */}
       <div className="relative w-full md:w-1/2 flex justify-center">
