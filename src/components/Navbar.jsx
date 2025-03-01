@@ -23,6 +23,7 @@ const Navbar = () => {
        
     const links = [
         {path:'/',name:'Home'},
+        {path:'/about-us',name:'About Us'},
         {path:'/services',name:'Services'},
         {path:'/blogs',name:'Blog'},
         {path:'/contact-us',name:'Contact Us'},
