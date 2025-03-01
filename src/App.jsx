@@ -3,8 +3,12 @@ import { BrowserRouter,createBrowserRouter,Route,RouterProvider,Routes } from "r
 const  HomePage = lazy(()=> import("./pages/HomePage"));
 const  ContactUs = lazy(()=> import("./pages/ContactUs"));
 const  BlogPage = lazy(()=> import("./pages/blogs/BlogPage"));
+const  BlogSingle = lazy(()=> import("./pages/blogs/Blogsingle"));
+const  ServicePage = lazy(()=> import( "./pages/services/ServicePage"));
+const  ServiceSingle = lazy(()=> import( "./pages/services/ServiceSingle"));
 import MainLayout from "./layouts/MainLayout";
-import BlogSingle from "./pages/blogs/Blogsingle";
+
+
 
 // Loading component
 const LoadingSpinner = () => (
@@ -27,6 +31,8 @@ const router = createBrowserRouter([
       {path:'/blogs' ,element:<SuspenseWrapper><BlogPage /></SuspenseWrapper>},
       {path:'/blog/:id' ,element:<SuspenseWrapper><BlogSingle /></SuspenseWrapper>},
       {path:'/contact-us' ,element:<SuspenseWrapper><ContactUs /></SuspenseWrapper>},
+      {path:'/services',element:<SuspenseWrapper><ServicePage /> </SuspenseWrapper>},
+      {path:'/service/:id',element:<SuspenseWrapper><ServiceSingle /> </SuspenseWrapper>},
 
     ]
   }

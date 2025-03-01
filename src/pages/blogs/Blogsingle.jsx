@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/header'
 import BlogLatest from '../../components/blog/BlogDisplay'
 import BlogImage1 from '../../assets/images/blog/blog2.jpg'
@@ -6,8 +6,18 @@ import BlogImage2 from '../../assets/images/blog/blog4.jpg'
 import { FaSquareCheck } from "react-icons/fa6";
 import BlogImage3 from '../../assets/images/blog/blog3.jpg'
 import { BsShare } from 'react-icons/bs'
+import { useParams } from 'react-router-dom'
 
 const BlogSingle = () => {
+    const {id} = useParams()
+     useEffect(()=>{
+    
+        document.documentElement.scrollIntoView({
+            behavior:'smooth',
+            block:'start',
+            inline:'start',
+        })
+        },[id])
     return (
         <div className='w-full flex-col pb-7  justify-center bg-[#0d0f15]  items-center flex gap-2'>
             <Header title={`single blog`} path={`blog / Single Blog 1`} />
@@ -47,11 +57,11 @@ const BlogSingle = () => {
 
                     <div className="flex flex-col gap-7 w-full">
 
-                        <div className="flex w-full gap-4 ">
-                            <div className="w-1/2 min-h-80 border">
+                        <div className="flex flex-wrap w-full gap-4 ">
+                            <div className="flex-1/2 lg:flex-1/3 min-h-80 ">
                                 <img src={BlogImage3} className='w-full h-full object-cover ' alt="" />
                             </div>
-                            <div className="w-1/2 min-h-80 border">
+                            <div className="flex-1/2 lg:flex-1/3 min-h-80 ">
                                 <img src={BlogImage2} className='w-full h-full object-cover ' alt="" />
                             </div>
                         </div>

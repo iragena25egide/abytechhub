@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/header'
 import BlogCard from '../../components/blog/BlogCard'
 
@@ -7,7 +7,14 @@ import { cards } from '../../stores/Blogdata'
 
 const BlogPage = () => {
 
+    useEffect(()=>{
    
+       document.documentElement.scrollIntoView({
+           behavior:'smooth',
+           block:'start',
+           inline:'start',
+       })
+       },[])
     return (
         <div className='w-full flex-col pb-7 justify-center bg-[#0d0f15]  items-center flex gap-2'>
             <Header title={`blog`} path={`blog`} />

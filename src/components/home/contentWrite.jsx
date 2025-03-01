@@ -3,6 +3,7 @@ import { IoDocumentTextSharp } from "react-icons/io5";
 import { MdOutlineDraw } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const services = [
@@ -13,8 +14,9 @@ const services = [
 ];
 
 export default function ContentWriteServices() {
+  const navigate =  useNavigate()
   return (
-    <section className="bg-[#0D0F1A] text-white py-16 px-6 text-center">
+    <section className="bg-[#0D0F1A] w-full text-white py-16 px-6 text-center">
       <h2 className="text-4xl font-bold">
         Our <span className="text-yellow-400">Content Write</span> Services
       </h2>
@@ -27,6 +29,7 @@ export default function ContentWriteServices() {
           <div
             key={index}
             className="flex flex-col items-center justify-center p-6 bg-[#151726] rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+            onClick={()=> navigate(`/service/1`) }
           >
             {service.icon}
             <h3 className="mt-4 text-lg font-semibold">{service.title}</h3>
