@@ -7,8 +7,8 @@ const Navbar = () => {
         {path:'#',name:'Pages'},
         {path:'#',name:'Services'},
         {path:'#',name:'Projects'},
-        {path:'/blog',name:'Blog'},
-        {path:'#',name:'Contact Us'},
+        {path:'/blogs',name:'Blog'},
+        {path:'/contact-us',name:'Contact Us'},
     
     
       ]

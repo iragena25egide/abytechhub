@@ -1,8 +1,10 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter,createBrowserRouter,Route,RouterProvider,Routes } from "react-router-dom"
 const  HomePage = lazy(()=> import("./pages/HomePage"));
+const  ContactUs = lazy(()=> import("./pages/ContactUs"));
+const  BlogPage = lazy(()=> import("./pages/blogs/BlogPage"));
 import MainLayout from "./layouts/MainLayout";
-import BlogPage from "./pages/BlogPage";
+import BlogSingle from "./pages/blogs/Blogsingle";
 
 // Loading component
 const LoadingSpinner = () => (
@@ -22,8 +24,9 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children:[
       {index:true ,element:<SuspenseWrapper><HomePage /></SuspenseWrapper>},
-      {path:'/blog' ,element:<SuspenseWrapper><BlogPage /></SuspenseWrapper>},
-      {path:'/blog/:id' ,element:<SuspenseWrapper><BlogPage /></SuspenseWrapper>},
+      {path:'/blogs' ,element:<SuspenseWrapper><BlogPage /></SuspenseWrapper>},
+      {path:'/blog/:id' ,element:<SuspenseWrapper><BlogSingle /></SuspenseWrapper>},
+      {path:'/contact-us' ,element:<SuspenseWrapper><ContactUs /></SuspenseWrapper>},
 
     ]
   }
